@@ -13,11 +13,12 @@
 
 ## 当前内容
 
-目前仓库主要收录了与 SDD / RIPER 相关的 skill，包括：
+目前仓库主要收录了与 SDD / RIPER、`Pencil` `.pen` 转前端代码相关的 skill，包括：
 
 - `coding/sdd-riper-one`：偏完整流程、强调阶段门禁的 spec-driven 研发 skill
 - `coding/sdd-riper-one-light`：偏轻量流程、强调 checkpoint 校准的 coding skill
 - `coding/sdd-usage-guide.md`：相关使用说明
+- `coding/pencil/pencil-pen-to-frontend`：将 `Pencil` 的 `.pen` 设计结构转成更适合前端落地的语义输入、组件映射和代码生成流程的 skill
 
 这些内容通常不只是单个提示词文件，而是一套可协作的 skill 结构，可能包含：
 
@@ -50,9 +51,12 @@
 ```text
 .
 ├── coding/
-│   ├── sdd-riper-one/
-│   ├── sdd-riper-one-light/
-│   └── sdd-usage-guide.md
+│   ├── pencil/
+│   │   └── pencil-pen-to-frontend/
+│   └── sdd/
+│       ├── sdd-riper-one/
+│       ├── sdd-riper-one-light/
+│       └── README.md
 └── README.md
 ```
 
