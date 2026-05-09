@@ -19,6 +19,7 @@
 - `coding/sdd-riper-one-light`：偏轻量流程、强调 checkpoint 校准的 coding skill
 - `coding/sdd-usage-guide.md`：相关使用说明
 - `coding/pencil/pencil-pen-to-frontend`：将 `Pencil` 的 `.pen` 设计结构转成更适合前端落地的语义输入、组件映射和代码生成流程的 skill
+- `document-to-podcast`：文档转播客的 skill、MCP 描述以及可运行的 API / MCP 示例
 
 这些内容通常不只是单个提示词文件，而是一套可协作的 skill 结构，可能包含：
 

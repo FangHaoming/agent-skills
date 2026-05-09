@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "document-to-podcast": {
+      "type": "stdio",
+      "command": "__ABSOLUTE_PATH_TO_NODE__",
+      "args": [
+        "__ABSOLUTE_PATH_TO_REPO__/apps/document-to-podcast-mcp/dist/index.js"
+      ],
+      "env": {
+        "DOCUMENT_TO_PODCAST_API_URL": "http://localhost:4310"
+      }
+    }
+  }
+}
