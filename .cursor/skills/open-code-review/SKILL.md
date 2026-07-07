@@ -51,9 +51,15 @@ curl -fsSL https://raw.githubusercontent.com/alibaba/open-code-review/main/insta
 
 Open Code Review requires Git 2.41+ for diff generation, code search, and repository operations.
 
-If `ocr llm test` fails, guide the user to configure a model endpoint. Never invent, expose, or hardcode API keys.
+If `ocr llm test` fails, guide the user to configure a model endpoint. Before giving concrete LLM configuration commands or editing CI/local config, confirm whether the user's provider is OpenAI-compatible or a non-OpenAI-compatible provider. Do not assume OpenAI-compatible defaults when the provider is unknown. Never invent, expose, or hardcode API keys.
 
-Common environment-variable configuration for CI or temporary shell sessions:
+Ask a concise clarification such as:
+
+```text
+你的 LLM 服务是 OpenAI 兼容接口（base URL + API key + model）还是其他类型的提供商/API？
+```
+
+For OpenAI-compatible providers, common environment-variable configuration for CI or temporary shell sessions:
 
 ```bash
 export OCR_LLM_URL="<provider-url>"
@@ -61,7 +67,9 @@ export OCR_LLM_AUTH_TOKEN="<api-key>"
 export OCR_LLM_MODEL="<model>"
 ```
 
-Persistent config can also be set with `ocr config` if the user wants local setup.
+For non-OpenAI-compatible providers, inspect the current `ocr` documentation or `ocr config` help for the supported adapter/config shape before suggesting exact settings.
+
+Persistent config can also be set with `ocr config` if the user wants local setup; still confirm the provider type first.
 
 ## Review Workflow
 
