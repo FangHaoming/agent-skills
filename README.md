@@ -13,13 +13,15 @@
 
 ## 当前内容
 
-目前仓库主要收录了与 SDD / RIPER、`Pencil` `.pen` 转前端代码相关的 skill，包括：
+目前仓库主要收录 `.cursor/skills` 下的可复用 skill，包括：
 
-- `coding/sdd-riper-one`：偏完整流程、强调阶段门禁的 spec-driven 研发 skill
-- `coding/sdd-riper-one-light`：偏轻量流程、强调 checkpoint 校准的 coding skill
-- `coding/sdd-usage-guide.md`：相关使用说明
-- `coding/pencil/pencil-pen-to-frontend`：将 `Pencil` 的 `.pen` 设计结构转成更适合前端落地的语义输入、组件映射和代码生成流程的 skill
-- `document-to-podcast`：文档转播客的 skill、MCP 描述以及可运行的 API / MCP 示例
+- `document-to-podcast`：文档转播客任务生成 skill
+- `frontend-code-review`：前端代码审查 skill
+- `frontend-semantic-dom`：前端语义化 DOM 结构约束 skill
+- `open-code-review`：Alibaba Open Code Review / OCR 工作流 skill
+- `pencil`：`Pencil` `.pen` 设计转前端代码相关 skill
+- `sdd`：spec-driven / checkpoint-driven coding 相关 skill
+- `weekly-report-formatter`：中文周报整理与格式化 skill
 
 这些内容通常不只是单个提示词文件，而是一套可协作的 skill 结构，可能包含：
 
@@ -51,13 +53,15 @@
 
 ```text
 .
-├── coding/
-│   ├── pencil/
-│   │   └── pencil-pen-to-frontend/
-│   └── sdd/
-│       ├── sdd-riper-one/
-│       ├── sdd-riper-one-light/
-│       └── README.md
+├── .cursor/
+│   └── skills/
+│       ├── document-to-podcast/
+│       ├── frontend-code-review/
+│       ├── frontend-semantic-dom/
+│       ├── open-code-review/
+│       ├── pencil/
+│       ├── sdd/
+│       └── weekly-report-formatter/
 └── README.md
 ```
 
