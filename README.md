@@ -15,8 +15,6 @@
 
 目前仓库主要收录 `.cursor/skills` 下的可复用 skill，包括：
 
-- `document-to-podcast`：文档转播客任务生成 skill
-- `frontend-code-review`：前端代码审查 skill
 - `frontend-semantic-dom`：前端语义化 DOM 结构约束 skill
 - `open-code-review`：Alibaba Open Code Review / OCR 工作流 skill
 - `pencil`：`Pencil` `.pen` 设计转前端代码相关 skill
@@ -55,8 +53,6 @@
 .
 ├── .cursor/
 │   └── skills/
-│       ├── document-to-podcast/
-│       ├── frontend-code-review/
 │       ├── frontend-semantic-dom/
 │       ├── open-code-review/
 │       ├── pencil/
